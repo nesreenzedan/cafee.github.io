@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixin";
+
+.breadcrumb {
+    .custom-breadcrumb1 .active {
+        @include style($color1)
+    }
+    .custom-breadcrumb2 .active {
+        @include style1($color2)
+    }
+}
