@@ -52,8 +52,10 @@ body {
 }
 
 
-.custom-navbar .navbar-nav li.active:hover a.nav-link {
-    background-color: #e7e7e7;
+.custom-navbar .navbar-nav li.active a.nav-link {
+    color: #000;
+    border-bottom: 1px solid #000;
+  
 }
 
 .custom-navbar a.btn-icons {
@@ -68,12 +70,21 @@ body {
 }
 
 .custom-navbar .btn-icons:hover {
-    color: #000000;
+    color: #000;
     background-color: #e2e1e1;
 }
 
 .custom-navbar .navbar-nav li:last-of-type {
     margin-top: 8px;
+}
+
+.dropdown .dropdown-menu{
+    left: auto;
+    padding-right: 8px;
+}
+
+.dropdown:hover{
+    background-color: #837c7c;
 }
 
 /*تنسيقات جسم الصفحة*/
@@ -242,12 +253,31 @@ input[type=email], input[type="number"] {
 
 
     }
+  .feature{
+      font-size: 12px;
+      line-height: 1rem;
 
-
-
-
+  }
+}
+@media (max-width: 767px) {
+    .feature{
+        font-size:10px;
+        line-height: 0.75rem;
+  
+    }
 
 }
+@media (max-width:575px) {
+    .feature{
+        font-size:8px;
+        line-height: 0.75rem;
+  
+    }
+}
+
+
+
+
 
 /*المسار العلوي*/
 .custom-breadcrumb,
